@@ -1,0 +1,93 @@
+mongoDB
+-------
+-> mongoDB , cosmosdb, firebase , couchDB
+------------------------------------------
+-> Oracle  -> Mongo DB
+------------------------
+Database  -> Database -> collection of arrays
+Tables    -> Collections -> Array objects
+Rows      -> document -> Object
+Columns   -> Fields -> key-value
+
+program -> Schema configuration
+CRUD -> program -> functions
+-> mongoose 
+
+-> Get all records from table
+
+   employees.find({empId : "AA001"}); // select * from employees where empId = "AA001";
+   employees.findOne({empId : "AA001"}); // select * from employees where empId = "AA001";
+   employees.findById({empId : "AA001"}); // select * from employees where empId = "AA001";
+   
+   employees.findByIdAndUpdate();
+   employees.findByIdAndDelete();
+   employees.save();
+   
+   
+Contact Manager Application using Express & MongoDB
+---------------------------------------------------
+DATABASE : contact-manager
+Tables : contacts , groups
+npm install express-validator @types/express-validator mongoose @types/mongoose dotenv @types/dotenv
+npm install 
+bcryptjs @types/bcryptjs 
+gravatar @types/gravatar 
+jsonwebtoken @types/jsonwebtoken
+
+-> API Testing
+----------------
+-> Test the Server (using postman / insomnia)
+------------------
+GET -> to get data from server -> READ
+POST -> to create data at server -> CREATE
+PUT -> to update data at server -> UPDATE
+DELETE -> to delete data at server -> DELETE
+
+/**
+	@usage : to get all contacts
+    @method : GET
+    @params : no-params
+    @url : http://localhost:9999/contacts
+*/
+
+/**
+	@usage : get a contact
+    @method : GET
+    @params : no-params
+    @url : http://localhost:9999/contacts/:contactId
+*/
+
+/**
+	@usage : create a contact
+    @method : POST
+    @params : name, imageUrl, email, mobile, company, title, groupId
+    @url : http://localhost:9999/contacts/
+*/
+
+/**
+	@usage : Update a contact
+    @method : PUT
+    @params : name, imageUrl, email, mobile, company, title, groupId
+    @url : http://localhost:9999/contacts/:contactId
+*/
+
+/**
+	@usage : Delete a contact
+    @method : DELETE
+    @params : no-params
+    @url : http://localhost:9999/contacts/:contactId
+*/
+
+/**
+	@usage : Get all groups
+    @method : GET
+    @params : no-params
+    @url : http://localhost:9999/groups/
+*/
+
+/**
+	@usage : Get a group
+    @method : GET
+    @params : no-params
+    @url : http://localhost:9999/groups/:groupId
+*/
